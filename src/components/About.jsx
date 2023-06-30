@@ -2,64 +2,78 @@ import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
+
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
 
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+
+
+
+
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+    
+       <motion.div variants={textVariant()}>
+        {/* <p className={styles.sectionSubText}>Introduction</p> */}
+        <h1 className={`${styles.AboutHeadText} `}>Immerse yourself in the awe-inspiring world of Hanuman as
+you embark on a spiritual journey like no other.</h1>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className={`${styles.AboutSubText} mt-5 `}
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
+        Hanuman Universe token is a meme token built on the Binance Smart Network. With a total
+supply of 40,000,000,000,000 $HUT, it offers awareness, belongingness, connectivity, guidance,
+and comfort with the blockchain experience.
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+1% donation tax, equal opportunities, and space to grow on pancakeswap, and engage in a
+vibrant community that embraces a sense of family, connection to tradition, perseverance, and
+empowerment.
+
+
+{/* <h3 className={styles.sectionSubText}>
+- Limited Supply: $HUT has a limited supply of 40 trillion tokens, which means that there is
+a finite amount of tokens that will ever be created.
+</h3>
+<h3 className={styles.sectionSubText}>
+- Decentralized: $HUT is a decentralized cryptocurrency, which means that it is not
+controlled by any central authority. This feature ensures that the token is resistant to
+censorship and provides a high level of security.
+</h3> */}
+
+
+      </motion.p>
+      
+     
+     
+{/* <video src={videobg}/> */}
+
+      
+{/* <h3 className={`${styles.AboutHeadText} text-center mt-10`}>Tokenomics</h3>
+<h3 className={styles.AboutSubText}>We believe in transparency and fairness. Our token distribution is as follows:</h3>
+      <div className=' mt-10 flex flex-wrap gap-0'>
+        
+      
+     
+      
+
+      <div className=' mt-2  flex flex-wrap gap-20'>
+        
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+        </div>
+      </div> */}
+      
+     
     </>
+    
   );
 };
 
