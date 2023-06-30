@@ -9,6 +9,7 @@ import Feedbacks from "./Feedbacks";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import HeroE from './HeroE';
+import ImageSection from './About';
 
 
 export {
@@ -26,4 +27,5 @@ export {
   ComputersCanvas, 
   StarsCanvas,
   HeroE,
+  ImageSection,
 };

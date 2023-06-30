@@ -19,10 +19,10 @@ const Hero = () => {
         className={`absolute inset-0 md:top-[350px]   max-w-6xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
       >
         
-          <h1 className={`${styles.heroSubText} text-white`}>
+          <h1 className={`${styles.heroHeadText} text-white`}>
           Unite with the Divine:
           </h1>
-          <p className={`${styles.heroHeadText}`}>
+          <p className={`${styles.heroSubText}`}>
           Bring Hanumans Story To Every <br className='sm:block hidden' /> Community 
           In The World.
           </p>

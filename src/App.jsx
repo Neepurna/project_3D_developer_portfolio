@@ -2,6 +2,7 @@ import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas,HeroE} from "./components";
 import Relation from "./components/Relation";
 import Footer from "./components/footer";
+import PieChart from "./components/Pie-Chart";
 const App = () => {
   return (
     <BrowserRouter>
@@ -17,8 +18,11 @@ const App = () => {
         <Relation/>
         </div>
         
-        <Tech/>
+        {/* <Tech/> */}
         <About />
+        <div className="flex items-center justify-center min-h-screen bg-gray-100">
+      <PieChart />
+    </div>
         <Experience />
         
         <Works />

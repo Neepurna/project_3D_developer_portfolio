@@ -7,9 +7,9 @@ const styles = {
   padding: 'sm:px-16 px-6 sm:py-16 py-10',
 
   heroHeadText:
-    "text-center font-black text-Black lg:text-[80px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-2" ,
+    " font-black text-Black lg:text-[90px] sm:text-[60px] xs:text-[50px] text-[40px] lg:leading-[90px] mt-2" ,
   heroSubText:
-    "text-center text-eerieBlack font-medium lg:text-[30px] sm:text-[30px] xs:text-[30px] text-[16px] lg:leading-[40px]",
+    " text-eerieBlack font-medium lg:text-[30px] sm:text-[30px] xs:text-[30px] text-[16px] lg:leading-[40px]",
   AboutHeadText:
     "text-center font-black text-white lg:text-[30px] sm:text-[25px] xs:text-[25px] text-[30px] lg:leading-[50px] ",
   AboutSubText:

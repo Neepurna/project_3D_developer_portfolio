@@ -1,43 +1,64 @@
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-
+import React, { useRef, useState, useEffect } from "react";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
-import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
-import img1 from '../assets/relation.png';
+
+import img1 from "../assets/relation.png";
 
 const Relation = () => {
-  
+  const [isVisible, setIsVisible] = useState(false);
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        setIsVisible(entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: "0px",
+        threshold: 0.1,
+      }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  const containerStyle = isVisible ? styles.fadeIn : "";
+
   return (
-    <div>
-
-<h3 className={`${styles.AboutHeadText} text-center `}>Hanuman and Blockchain</h3>
     <div
-    
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}>
+      ref={sectionRef}
+      className={`min-h-screen flex flex-col justify-center items-center ${containerStyle}`}
+    >
+      <div className="max-w-4xl px-6 py-12 mx-auto">
+        <h3 className="text-5xl font-bold text-center mb-8">
+          Hanuman and Blockchain
+        </h3>
+        <p className="text-lg text-white text-center mb-8 break-words">
+          We are building a universe for the community, <br /> inspired by Hanuman’s stories via blockchain.
+        </p>
+        <div className="flex flex-col md:flex-row gap-10 items-center">
+          <div className="flex-1 p-0">
+            <img src={img1} alt="Relation" className="w-full h-auto max-w-full max-h-full" />
+          </div>
 
-      <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[1] p-6 rounded-2xl'
-      >
-        
-        
-<img src={img1}>
-  
-</img>
-       </motion.div>
-
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
-      >
-        <EarthCanvas />
-      </motion.div>
-    </div>
+          <div className="flex-1 md:h-[500px]">
+            <div className="flex justify-center items-center h-full">
+              <EarthCanvas />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default SectionWrapper(Relation, "contact");
+export default Relation;
