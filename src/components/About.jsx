@@ -1,6 +1,7 @@
 import React from 'react';
 import Tilt from 'react-tilt';
 import { typescript, redux, reactjs, javascript } from '../assets';
+import { SectionWrapper } from '../hoc';
 
 const ImageSection = () => {
   return (
@@ -9,46 +10,46 @@ const ImageSection = () => {
       <p className="text-lg text-gray-600 mb-4">
         Immerse yourself in the awe-inspiring world of Hanuman as you embark on a spiritual journey like no other.
       </p>
-      <div className="max-h-screen mt-4 overflow-hidden">
-        <div className="flex flex-wrap justify-center w-full max-w-screen-lg">
-          <Tilt className="w-full sm:w-1/2 md:w-1/4 p-4">
+      <div className="max-w-screen-lg mt-4 overflow-hidden">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <Tilt className="p-4">
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl">
               <img
                 src={typescript}
                 alt="Image 1"
-                className="rounded-lg w-full h-full transform hover:scale-105"
+                className="rounded-lg w-full h-48 object-cover transform hover:scale-105"
               />
-              <p className="text-base mt-2 text-black text-center font-bold">Image 1 Text</p>
+              <p className="text-base mt-2 text-black text-center font-bold">Meme</p>
             </div>
           </Tilt>
-          <Tilt className="w-full sm:w-1/2 md:w-1/4 p-4">
+          <Tilt className="p-4">
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl">
               <img
                 src={redux}
                 alt="Image 2"
-                className="rounded-lg w-full h-full transform hover:scale-105"
+                className="rounded-lg w-full h-48 object-cover transform hover:scale-105"
               />
-              <p className="text-base mt-2 text-black text-center font-bold">Image 2 Text</p>
+              <p className="text-base mt-2 text-black text-center font-bold">NFT</p>
             </div>
           </Tilt>
-          <Tilt className="w-full sm:w-1/2 md:w-1/4 p-4">
+          <Tilt className="p-4">
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl">
               <img
                 src={reactjs}
                 alt="Image 3"
-                className="rounded-lg w-full h-full transform hover:scale-105"
+                className="rounded-lg w-full h-48 object-cover transform hover:scale-105"
               />
-              <p className="text-base mt-2 text-black text-center font-bold">Image 3 Text</p>
+              <p className="text-base mt-2 text-black text-center font-bold">Play to Earn</p>
             </div>
           </Tilt>
-          <Tilt className="w-full sm:w-1/2 md:w-1/4 p-4">
+          <Tilt className="p-4">
             <div className="bg-white rounded-lg shadow-lg hover:shadow-xl">
               <img
                 src={javascript}
                 alt="Image 4"
-                className="rounded-lg w-full h-full transform hover:scale-105"
+                className="rounded-lg w-full h-48 object-cover transform hover:scale-105"
               />
-              <p className="text-base mt-2 text-black text-center font-bold">Image 4 Text</p>
+              <p className="text-base mt-2 text-black text-center font-bold">Metaverse</p>
             </div>
           </Tilt>
         </div>
@@ -70,4 +71,4 @@ const ImageSection = () => {
   );
 };
 
-export default ImageSection;
+export default SectionWrapper (ImageSection,"about");

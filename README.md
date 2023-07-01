@@ -1,20 +1,24 @@
-# Build and Deploy a Fantastic 3D Portfolio Website with Three.js and React.js
-![3D Portfolio](https://i.ibb.co/9ykhLtM/Thumbnail.png)
+[Introduction to Token]/About 
+Hanuman Universe token is a meme token built on the Binance Smart Network. With a total supply of 40,000,000,000,000 $HUT, it offers awareness, belongingness, connectivity, guidance, and comfort with the blockchain experience. 
 
-## Introduction
-The most impressive websites in the world use 3D graphics and animations to bring their content to life. Learn how to build your own ThreeJS 3D Developer Portfolio today! 
- 
-In this course, you'll learn the following:
-- ThreeJS - a powerful 3D graphics library for rendering and animating the 3D model
-- React Three Fiber - a popular library for creating 3D graphics with ThreeJS in React
-- TailwindCSS - a popular utility-first CSS styling framework
-- Framer Motion - the most popular library used to bring your React website to life with animations
-You'll also learn how to:
-- Load, create and customize stunning 3D models and geometries with various lights, as well as understand the 3D world with a camera and positioning of an object in space.
-- Make your code reusable and scalable using Higher Order Components (HOCs) and other industry-standard best practices
-- Implement sending emails through a form on the website
-- Ensure responsiveness across all devices and improve your site's performance using Suspense and Preload.
+1% tax, equal opportunities, space to grow, and engage in a vibrant community that embraces a sense of family, connection to tradition, perseverance, and empowerment.
 
-## Want to land your dream programming job in 3 - 6 months?
-⭐ JSM Masterclass Experience - https://jsmastery.pro/masterclass
-Become a Software Engineer. Guaranteed.
+
+Limited Supply: $HUT has a limited supply of 40 trillion tokens, which means that there is a finite amount of tokens that will ever be created.
+Decentralized: $HUT is a decentralized cryptocurrency, which means that it is not controlled by any central authority. This feature ensures that the token is resistant to censorship and provides a high level of security.
+
+—---------------------------------------------------------------------------------------------------------
+
+Tokenomics 
+
+We believe in transparency and fairness. Our token distribution is as follows: 
+
+Team Allocation (15%): We have a dedicated team working passionately to manifest our vision and guide the project toward success.
+
+Advisor and Community Whitelisting (10% ) : The 10% is for early community and the advisor helps the project to grow in a bigger space. 
+
+Public Sale (35%): Be an early holder of Tokens! Participate in our presale and gain a significant advantage as we reward our community members right from the start.
+
+Staking Rewards (35%): Secure the network, contribute to its growth, and earn rewards for your commitment through our staking program.
+
+Exchange and Partnership (5%) :  Token allocated for future partnership and exchange listing.

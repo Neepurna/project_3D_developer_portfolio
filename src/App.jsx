@@ -2,7 +2,9 @@ import { BrowserRouter } from "react-router-dom";
 import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas,HeroE} from "./components";
 import Relation from "./components/Relation";
 import Footer from "./components/footer";
-import PieChart from "./components/Pie-Chart";
+import TokenomicsSection from "./components/Tokenomics";
+
+
 const App = () => {
   return (
     <BrowserRouter>
@@ -14,21 +16,19 @@ const App = () => {
         <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
         <HeroE />
         </div>
-        <div className='relative z-0'>
+        
         <Relation/>
-        </div>
+      
         
         {/* <Tech/> */}
         <About />
-        <div className="flex items-center justify-center min-h-screen bg-gray-100">
-      <PieChart />
-    </div>
+        <TokenomicsSection/>
         <Experience />
         
-        <Works />
+        {/* <Works /> */}
         
         
-        {/* <StarsCanvas /> */}
+    
         <div className='relative z-0'>
           <Contact />
           {/* <StarsCanvas /> */}

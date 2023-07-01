@@ -28,12 +28,16 @@ import {
 
 export const navLinks = [
   {
-    id: "relation",
+    id: "hnu",
+    title: "Hanuman BlockChain",
+  },
+  {
+    id: "about",
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "token",
+    title: "tokenomics",
   },
   {
     id: "contact",
