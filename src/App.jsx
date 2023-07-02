@@ -3,7 +3,7 @@ import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, Stars
 import Relation from "./components/Relation";
 import Footer from "./components/footer";
 import TokenomicsSection from "./components/Tokenomics";
-
+import MemeToMetaverseSection from "./components/About";
 
 const App = () => {
   return (
@@ -19,11 +19,11 @@ const App = () => {
         
         <Relation/>
       
-        
+        <MemeToMetaverseSection/>
         {/* <Tech/> */}
-        <About />
+        {/* <About /> */}
         <TokenomicsSection/>
-        <Experience />
+        {/* <Experience /> */}
         
         {/* <Works /> */}
         

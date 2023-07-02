@@ -121,55 +121,55 @@ const technologies = [
   //   name: "docker",
   //   icon: docker,
   // },
-];
+// ];
 
-const experiences = [
-  {
-    title: "Phase 1",
-    company_name: "",
-    icon: starbucks,
+// const experiences = [
+//   {
+//     title: "Phase 1",
+//     company_name: "",
+//     icon: starbucks,
 
-    iconBg: "#383E56",
-    date: "",
-    points: [
-      "Roadmap V1",
-      "Website",
-      "Smart Contract Development",
-      "Community Building",
-      "Marketing Campaigns",
-    ],
-  },
-  {
-    title: "Phase 2",
-    company_name: "",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "",
-    points: [
-      "Presale Launch",
-      "Influencer Marketing",
-      "Applying to list on CoinGecko and CMC",
-      "Advertising Campaign",
-      "Various Partnerships",
-    ],
-  },
-  {
-    title: "Phase 3",
-    company_name: "",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "",
-    points: [
-      "Youtube Campaigns",
-      "Community Expansion",
-      "Giveaway",
-      "Team Expansion",
-      "Contract Audit",
-      "Establish Legal Entity",
-      "CEX Listing",
-      "Roadmap V2"
-    ],
-  },
+//     iconBg: "#383E56",
+//     date: "",
+//     points: [
+//       "Roadmap V1",
+//       "Website",
+//       "Smart Contract Development",
+//       "Community Building",
+//       "Marketing Campaigns",
+//     ],
+//   },
+//   {
+//     title: "Phase 2",
+//     company_name: "",
+//     icon: tesla,
+//     iconBg: "#E6DEDD",
+//     date: "",
+//     points: [
+//       "Presale Launch",
+//       "Influencer Marketing",
+//       "Applying to list on CoinGecko and CMC",
+//       "Advertising Campaign",
+//       "Various Partnerships",
+//     ],
+//   },
+//   {
+//     title: "Phase 3",
+//     company_name: "",
+//     icon: "",
+//     iconBg: "#383E56",
+//     date: "",
+//     points: [
+//       "Youtube Campaigns",
+//       "Community Expansion",
+//       "Giveaway",
+//       "Team Expansion",
+//       "Contract Audit",
+//       "Establish Legal Entity",
+//       "CEX Listing",
+//       "Roadmap V2"
+//     ],
+//   },
   // {
   //   title: "Full stack Developer",
   //   company_name: "Meta",
@@ -256,4 +256,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies,  testimonials, projects };

@@ -7,8 +7,8 @@ const TokenomicsSection = () => {
   return (
     <section className="flex flex-col items-center justify-center py-16">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-6">Tokenomics</h2>
-        <p className="text-lg text-gray-600 mb-10" style={{ fontSize: '18px' }}>
+        <h2 className="text-5xl font-bold mb-6">Tokenomics</h2>
+        <p className="text-lg text-gray-600 mb-6 text-center text-white">
           We believe in transparency and fairness. Our token distribution is as follows:
         </p>
         <div className="flex flex-col md:flex-row justify-center items-center gap-8">
